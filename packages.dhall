@@ -98,8 +98,17 @@ in  upstream
       }
 -------------------------------
 -}
+
+
 let upstream =
       https://github.com/purescript/package-sets/releases/download/psc-0.15.4-20221031/packages.dhall
         sha256:c785240aefe3d5a219843cde92fbfca404323090801e74ff7605e2618d8d14b8
 
 in  upstream
+{-
+  with halogen.version = "master"
+  with halogen.repo = "https://example.com/path/to/git/repo.git"
+
+  with halogen-vdom.version = "v4.0.0"
+  with halogen-vdom.dependencies = [ "extra-dependency" ] # halogen-vdom.dependencies
+-}
